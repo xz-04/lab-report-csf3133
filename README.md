@@ -104,8 +104,8 @@ These technologies work together with HTML to form the **core of front-end web d
 ---
 
 ### 🧑‍💻 Author
-**Lab Module Developer:** *[Your Name or Institution]*  
-**Course:** Web Development Fundamentals  
+**Lab Module Developer: **
+**Course:**  
 **Module:** HTML Basics  
 
 ---
