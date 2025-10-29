@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+</head>
+<body>
+    <table bgcolor="black" width="700">
+        <tr bgcolor="grey">
+            <th width="100">Name</th>
+            <th width="100">Age</th>
+            <th width="100">Occupation</th>
+            <th width="100">Hobby</th>
+        </tr>
+        <tr bgcolor="lightgrey">
+            <td width="100">Lim Chia Ying</td>
+            <td width="100">21</td>
+            <td width="100">Student</td>
+            <td width="100">Reading</td>
+        </tr>
+        <tr bgcolor="lightgrey">
+            <td>Jane</td>
+            <td>21</td>
+            <td>Student</td>
+            <td>Gaming</td>
+        </tr>
+        <tr bgcolor="lightgrey">
+            <td>John</td>
+            <td>25</td>
+            <td>Web developer</td>
+            <td>Jogging</td>
+        </tr>
+    </table>
+
+    <h2>Simple Form</h2>
+    <form action = "submit_form.php" method="post">
+        <label for = "fname">First Name :</label><br>
+        <input type = "text" id = "fname" name="firstname"><br><br>
+
+        <label for = "lname">Last Name :</label><br>
+        <input type = "text" id = "lname" name = "lastname"><br><br>
+
+        <label for = "email">Email :</label><br>
+        <input type = "text" id = "email" name = "email"><br><br>
+
+        <label for = "gender">Gender :</label><br>
+        <input type = "radio" id = "male" name="gender" value = "male">
+        <label for="male">Male</label><br>
+        <input type = "radio" id = "female" name="gender" value = "female">
+        <label for="female">Female</label><br><br>
+
+        <label for = "fhobby">Your Favourite Hobby :</label><br>
+        <input type = "checkbox" id = "hobby1" name = "hobby1" value = "Reading">
+        <label for = "hobby1"></label> Reading</label><br>
+        <input type = "checkbox" id = "hobby2" name = "hobby2" value = "Gaming">
+        <label for = "hobby2"></label> Jogging</label><br><br>
+
+        <input type = "submit" value = "Submit">
+
+
+    </form>
+    
+
+     <header>
+        <h1>Welcome to My Personal Information Page</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>|<a href="#about">About</a>|<a href = "#contact">Contact</a>
+    </nav>
+
+    <section>
+        <article>
+            <h2>Personal Information</h2>
+            <p>This is an article about personal information.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 My Personal Information</p>
+    </footer>
+
+</body>
+</html>
