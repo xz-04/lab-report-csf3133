@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab3</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header" style="background-color: lightpink; height: 130px;">
+        <h1>Contact</h1>
+        <span>This form is to collect your contact</span>
+    </div>
+
+    <!-- Content -->
+    <div id="content" style="background-color: lightskyblue; height: 750px;">
+        <form action="">
+            Name: <input type="name" name="name">
+            <br>
+            Favourite Color: <input type="color" name="fcolor">
+            <br>
+            Email: <input type="email" name="useremail">
+            <br>
+            Date: <input type="date" name="date">
+            <br>
+            User satisfication: <input id="x" type="range" min="0" max="10" value="0">
+            <br>
+            <input type="submit" value="submit">
+        </form>
+        <div><br>
+            Inline calculator
+            <form oninput="z.value=parseInt(x.value)+parseInt(y.value)">
+                <input id="x" type="number"> + <input id="y" type="number"> =
+                <output name="z" for="x y"></output>
+                </output>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footbar" style="background-color: grey; height: 21 px;">
+        If you have any question, please contact 016-241 1662
+        Website ini adalah hakmilik chiaying&#169;
+    </div>
+</body>
+</html>
