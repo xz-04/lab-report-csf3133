@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* ===== Internal CSS for headings ===== */
+        section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+            text-decoration: underline;
+        }
+
+        /* ===== Navigation Bar Styling ===== */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            color: rgb(74, 181, 231);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* Apply link states styling */
+        nav li a:hover {
+            background-color: #b057da;
+            text-decoration: underline;
+        }
+
+        nav li a:visited {
+            color: #9063e2;
+        }
+
+        nav li a:active {
+            color: red;
+            text-decoration: line-through;
+        }
+
+        /* ===== Body and Layout ===== */
+        body {
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: underline;
+            /* Example of text-decoration */
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        /* ===== Form Styling ===== */
+        form {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 350px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 10px 15px;
+        }
+
+        button:hover {
+            background-color: #2c3e50;
+        }
+
+        #home {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my webpage!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+    </nav>
+
+    <br>
+
+    <section id="home">
+        <h2>Home</h2>
+        <article>
+            <p>This is home section of the webpage.</p>
+        </article>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This is about section of the webpage.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Form</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label>Favorite Hobbies:</label><br>
+            <input type="checkbox" name="hobby" value="Reading"> Reading
+            <input type="checkbox" name="hobby" value="Music"> Music
+            <input type="checkbox" name="hobby" value="Traveling"> Traveling<br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="video">
+        <h2>Video</h2>
+        <video width="500" controls>
+            <source src="Hi.mp4" type="video/mp4">Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Webpage</p>
+    </footer>
+</body>
+
+</html>
