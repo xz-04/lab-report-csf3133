@@ -1,0 +1,100 @@
+/*--Header STYLE--*/
+header {
+    font-size: 40px; /* Increase text size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the title */
+    padding: 20px; /* Add spacing */
+    background-color: #ffffff;
+    color: rgb(0, 0, 0); /* Text color */
+}
+
+/*--Navigation Bar STYLE--*/
+nav {
+    background-color: #7a1fe8;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between menus */
+}
+
+/* Each dropdown container */
+nav>div {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #523eec; /* Hover effect */
+}
+
+/*--Dropdown Panel--*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6613cc;
+    min-width: 220px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    top: 100%;
+    left: 0;
+    z-index: 999;
+}
+
+/* Dropdown items */
+.dropdown-content a {
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+    background-color: #240947;
+}
+
+/* Show dropdown on hover */
+nav>div:hover .dropdown-content {
+    display: block;
+}
+
+/* Highlight parent menu on hover */
+nav>div:hover .dropbtn {
+    background-color: #37087f;
+}
+
+section {
+    font-size: 20px; /* Increase text size */
+    text-align: left;
+    padding: 20px; /* Add spacing */
+    background-color: #cab1f7;
+    color: rgb(0, 0, 0); /* Text color */
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    line-height: 1.8;
+}
+
+footer {
+    border-top: 3px solid black;
+}
