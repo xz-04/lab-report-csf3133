@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #4a76e5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* -----------------------------------
+   START SCREEN
+----------------------------------- */
+#start-screen {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#start-btn {
+    padding: 15px 35px;
+    font-size: 22px;
+    background: #4a76e5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+#start-btn:hover {
+    background: #3b5ec3;
+    transform: translateY(-2px);
+}
+
+/* Hide quiz before start */
+#content {
+    display: none;
+}
+
+/* -----------------------------------
+   QUIZ CONTENT
+----------------------------------- */
+#content {
+    width: 80%;
+    max-width: 700px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Timer */
+#timer {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: right;
+    color: #444;
+    font-weight: bold;
+}
+
+/* Question */
+#question {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Options */
+.option {
+    padding: 12px 15px;
+    margin: 10px 0;
+    background: #eaeaea;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 18px;
+}
+
+.option:hover {
+    background: #dcdcdc;
+}
+
+/* Highlighting */
+.correct {
+    background-color: #c8f7c5 !important;
+    border-left: 6px solid #36b44c;
+}
+
+.incorrect {
+    background-color: #f7c5c5 !important;
+    border-left: 6px solid #d93025;
+}
+
+/* Disabled options */
+.option.disabled {
+    pointer-events: none;
+    opacity: 0.55;
+}
+
+/* Feedback text */
+#feedback {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Buttons */
+#next-btn,
+#finish-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+/* Next button */
+#next-btn:disabled {
+    background: #b1b1b1;
+    color: #eee;
+    cursor: not-allowed;
+}
+
+#next-btn:not(:disabled) {
+    background: #4a76e5;
+    color: white;
+}
+
+#next-btn:not(:disabled):hover {
+    background: #3b5ec3;
+}
+
+/* Score section */
+footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}

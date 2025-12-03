@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header that introduces quiz -->
+    <header>
+        Welcome to Quiz!
+    </header>
+
+    <!-- Start Screen -->
+    <div id="start-screen" style="text-align:center; margin-top:40px;">
+        <button id="start-btn" style="
+        padding: 15px 30px;
+        font-size: 20px;
+        background:#4a76e5;
+        color:white;
+        border:none;
+        border-radius:10px;
+        cursor:pointer;">
+            Start Quiz
+        </button>
+    </div>
+
+    <!-- section to display questions, answer options, and timer -->
+    <div id="content" style="display:none;">
+
+        <div id="quiz-container">
+
+            <div id="timer">
+                Time Left: <span id="time">10</span>s
+            </div>
+
+            <div id="question"></div>
+
+            <div id="options"></div>
+
+            <!-- section to show feedback (correct/incorrect) after each answer -->
+            <div id="feedback"></div>
+            <!-- button to submit answer and navigate between questions -->
+            <button id="next-btn" disabled>Next Question</button>
+
+        </div>
+
+        <!-- footer to display user's score after finishing the quiz -->
+        <footer>
+            <div id="score"></div>
+        </footer>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
