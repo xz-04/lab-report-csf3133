@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Exercise 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="lab7.css">
+
+</head>
+
+<body>
+
+    <!-- SIDE NAVIGATION -->
+    <div class="side-nav">
+        <a href="#home">Home</a>
+        <a href="#login">Login</a>
+        <a href="#slideshow">Slideshow</a>
+        <a href="#profile">Profile</a>
+        <a href="#progress">Progress</a>
+        <a href="#faq">FAQ</a>
+    </div>
+
+    <!-- TRANSPARENT IMAGE TEXT -->
+    <section id="home">
+        <div class="image-container">
+            <img src="7.1.jpg" alt="Background Image">
+            <div class="overlay-text">Welcome to My Homepage</div>
+        </div>
+    </section>
+
+    <!-- FORM ON IMAGE -->
+    <section id="login">
+        <div class="image-container">
+            <img src="7.2.jpg" alt="Login Background">
+            <div class="form-container">
+                <h2>Login</h2>
+                <form>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter Email" required>
+
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTOMATIC SLIDESHOW -->
+    <section id="slideshow">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="7.4.1.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="7.4.2.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="7.4.3.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFILE CARD -->
+    <section id="profile">
+        <div class="profile-card">
+            <img src="le.jpg" class="profile-image">
+            <h3 class="profile-name">Lim Chia Ying</h3>
+            <p class="profile-title">Web Design Student</p>
+            <p class="profile-education">Universiti Malaysia Terengganu</p>
+            <button class="contact-btn">Contact</button>
+        </div>
+    </section>
+
+    <!-- PROGRESS BAR -->
+    <section id="progress">
+        <div class="container">
+            <h2>Project Progress</h2>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <button id="increase-progress">Increase Progress</button>
+        </div>
+    </section>
+
+    <!-- COLLAPSIBLE -->
+    <section id="faq">
+        <div class="container">
+            <h2>More Information</h2>
+            <button class="collapsible">Click to Expand/Collapse</button>
+            <div class="content">
+                <p>Nice to meet you</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script src="lab7.js"></script>
+
+
+</body>
+
+</html>
